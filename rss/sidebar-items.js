@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["Category","RSS 2.0 Specification § `<category>` sub-element of `<item>`"],["Channel","RSS 2.0 Specification § Required channel elements"],["Item","RSS 2.0 Specification § Elements of `<item>`"],["Rss","RSS 2.0 Specification § What is RSS"],["TextInput","RSS 2.0 Specification § `<textInput>` sub-element of `<channel>`"]]});

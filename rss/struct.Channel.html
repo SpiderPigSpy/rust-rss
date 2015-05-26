@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Channel` struct in crate `rss`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Channel">
+
+    <title>rss::Channel - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'><a href='index.html'>rss</a></p><script>window.sidebarCurrent = {name: 'Channel', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>rss</a>::<wbr><a class='struct' href=''>Channel</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-130' class='srclink' href='../src/rss/channel.rs.html#37-58' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct Channel {
+    pub title: <a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>,
+    pub link: <a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>,
+    pub description: <a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>,
+    pub items: <a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../rss/struct.Item.html' title='rss::Item'>Item</a>&gt;,
+    pub language: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub copyright: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub managing_editor: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub web_master: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub pub_date: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub last_build_date: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub categories: <a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../rss/struct.Category.html' title='rss::Category'>Category</a>&gt;,
+    pub generator: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub docs: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub ttl: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub image: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub rating: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub text_input: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../rss/struct.TextInput.html' title='rss::TextInput'>TextInput</a>&gt;,
+    pub skip_hours: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub skip_days: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+}</pre><div class='docblock'><p><a href="http://cyber.law.harvard.edu/rss/rss.html#requiredChannelElements">RSS 2.0 Specification § Required channel elements</a></p>
+
+<h1 id="examples" class='section-header'><a
+                           href="#examples">Examples</a></h1><pre id='rust-example-rendered' class='rust '>
+<span class='kw'>use</span> <span class='ident'>rss</span>::<span class='ident'>Channel</span>;
+
+<span class='kw'>let</span> <span class='ident'>channel</span> <span class='op'>=</span> <span class='ident'>Channel</span> {
+    <span class='ident'>title</span>: <span class='ident'>String</span>::<span class='ident'>from</span>(<span class='string'>&quot;My Blog&quot;</span>),
+    <span class='ident'>link</span>: <span class='ident'>String</span>::<span class='ident'>from</span>(<span class='string'>&quot;http://myblog.com&quot;</span>),
+    <span class='ident'>description</span>: <span class='ident'>String</span>::<span class='ident'>from</span>(<span class='string'>&quot;My thoughts on life, the universe, and everything&quot;</span>),
+    <span class='ident'>items</span>: <span class='macro'>vec</span><span class='macro'>!</span>[],
+    ..<span class='ident'>Default</span>::<span class='ident'>default</span>()
+};
+</pre>
+</div><h2 class='fields'>Fields</h2>
+<table><tr class='stab '>
+                                  <td id='structfield.title'><code>title</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.link'><code>link</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.description'><code>description</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.items'><code>items</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.language'><code>language</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.copyright'><code>copyright</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.managing_editor'><code>managing_editor</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.web_master'><code>web_master</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.pub_date'><code>pub_date</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.last_build_date'><code>last_build_date</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.categories'><code>categories</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.generator'><code>generator</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.docs'><code>docs</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.ttl'><code>ttl</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.image'><code>image</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.rating'><code>rating</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.text_input'><code>text_input</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.skip_hours'><code>skip_hours</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.skip_days'><code>skip_days</code></td><td></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../rss/struct.Channel.html' title='rss::Channel'>Channel</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../rss/struct.Channel.html' title='rss::Channel'>Channel</a></code></h4>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+            <p>
+                Search functions by type signature (e.g.
+                <code>vec -> usize</code>)
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "rss";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script async src="../search-index.js"></script>
+</body>
+</html>
